@@ -8,7 +8,7 @@ document.getElementById('donation').addEventListener('click', function(event) {
     // Get the confirmation popup/modal
     const confirmationPopup = document.getElementById('my_modal_1');
     
-    if (addDonationNumber > 0) {
+    if(addDonationNumber > 0) {
         // Get the section balance and update it
         const sectionBalanceElement = document.getElementById('accountBalance');
         const sectionBalance = parseFloat(sectionBalanceElement.innerText.replace(' BDT', ''));
@@ -42,40 +42,4 @@ document.getElementById('donation').addEventListener('click', function(event) {
 document.getElementById('closeBtn').addEventListener('click', function() {
     const confirmationPopup = document.getElementById('my_modal_1');
     confirmationPopup.close();
-});
-
-// section-2 3
-
-// Get all the donate buttons
-const donateButtons = document.querySelectorAll(".donate-btn");
-
-// Loop through all the donate buttons and add the same event listener
-donateButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-        // Get the corresponding input and modal for the clicked button
-        const amountInput = document.querySelectorAll(".input-donation")[index];
-        const donationModal = document.querySelectorAll(".donation-modal")[index];
-
-        // Get the amount from the input field
-        const amount = amountInput.value;
-        
-        // If there's a valid amount, show the modal
-        if (amount) {
-            // Find the balance element inside the current section and update it
-            const balanceElement = button.closest("section").querySelector(".text-xl");
-            balanceElement.textContent = `${amount} BDT`;
-
-            // Show the corresponding modal
-            donationModal.showModal();
-        }
-    });
-});
-
-// Close button functionality for all modals
-const closeButtons = document.querySelectorAll(".close-btn");
-closeButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-        const donationModal = document.querySelectorAll(".donation-modal")[index];
-        donationModal.close();
-    });
 });

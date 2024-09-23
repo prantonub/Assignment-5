@@ -1,14 +1,14 @@
 
-const blogButton = document.getElementById('blogButton');
-const faqSection = document.getElementById('faqSection');
+// const blogButton = document.getElementById('blogButton');
+// const faqSection = document.getElementById('faqSection');
 
-blogButton.addEventListener('click', function() {
+// blogButton.addEventListener('click', function() {
 
-    if (faqSection.classList.contains('hidden')) {
+//     if (faqSection.classList.contains('hidden')) {
        
-        faqSection.classList.remove('hidden');
-    } else {
+//         faqSection.classList.remove('hidden');
+//     } else {
 
-        faqSection.classList.add('hidden');
-    }
-});
+//         faqSection.classList.add('hidden');
+//     }
+// });
