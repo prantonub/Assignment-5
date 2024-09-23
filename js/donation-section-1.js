@@ -8,7 +8,7 @@ document.getElementById('donation').addEventListener('click', function(event) {
     // Get the confirmation popup/modal
     const confirmationPopup = document.getElementById('my_modal_1');
     
-    if(addDonationNumber > 0) {
+    if (addDonationNumber > 0) {
         // Get the section balance and update it
         const sectionBalanceElement = document.getElementById('accountBalance');
         const sectionBalance = parseFloat(sectionBalanceElement.innerText.replace(' BDT', ''));
@@ -43,3 +43,4 @@ document.getElementById('closeBtn').addEventListener('click', function() {
     const confirmationPopup = document.getElementById('my_modal_1');
     confirmationPopup.close();
 });
+
