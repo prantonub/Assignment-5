@@ -1,9 +1,11 @@
 document.getElementById('donation-2').addEventListener('click', function(event) {
     event.preventDefault();
+
     
     const addDonation = document.getElementById('input-donation-2').value;
     const addDonationNumber = parseFloat(addDonation);
 
+    
     const confirmationPopup = document.getElementById('my_modal_2');
     
     if(addDonationNumber > 0) {
