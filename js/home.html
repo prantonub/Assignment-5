@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <!-- lexend Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<nav
+    class=" fixed top-0 left-0 w-full max-w-12xl mx-auto px-4 py-3 flex justify-between items-center p-10 py-10 bg-zinc-100 shadow-lg">
+<a href="/index.html">
+    <button id="blogButton" class="bg-lime-400 text-black font-semibold px-6 py-2 rounded-md shadow hover:bg-lime-500">
+        Home
+    </button>
+</nav>
+    <section class="bg-gray-100 p-10 mt-6">
+        <div id="faqSection" class="max-w-2xl mx-auto bg-white p-5 rounded-lg shadow-lg ">
+            <h2 class="text-2xl font-bold mb-4 flex items-center">
+                <span>Important FAQ</span>
+                <i class="fas fa-question-circle ml-2"></i>
+            </h2>
+
+                        <details class="border-b border-gray-300 mb-2">
+                            <summary class="cursor-pointer py-4 text-lg font-semibold text-left">What is the document object model (DOM)?
+                            </summary>
+                            <p class="text-gray-500 pl-4 pb-4">The Document Object Model (DOM) is a programming interface for web documents. It
+                                represents the page so that programs can change the document structure, style, and content. Essentially, the DOM
+                                allows web pages to be dynamic by enabling JavaScript to interact with HTML and CSS.</p>
+                        </details>
+                        
+                        <details class="border-b border-gray-300 mb-2">
+                            <summary class="cursor-pointer py-4 text-lg font-semibold text-left">How do you select an element from the DOM?
+                            </summary>
+                            <p class="text-gray-500 pl-4 pb-4">You can select an element from the DOM using JavaScript methods like
+                                `getElementById`, `getElementsByClassName`, `querySelector`, or `querySelectorAll`. These allow developers to
+                                target and manipulate elements based on their ID, class, tag, or CSS selector.</p>
+                        </details>
+                        
+                        <details class="border-b border-gray-300 mb-2">
+                            <summary class="cursor-pointer py-4 text-lg font-semibold text-left">What is event delegation in the context of the
+                                DOM, and why is it useful?</summary>
+                            <p class="text-gray-500 pl-4 pb-4">Event delegation is a technique where a single event listener is added to a
+                                parent element, rather than individual listeners to each child element. It allows events triggered by children
+                                to be captured by the parent. This is useful for managing dynamic content and improving performance, especially
+                                in large DOM trees.</p>
+                        </details>
+                        
+                        <details class="border-b border-gray-300 mb-2">
+                            <summary class="cursor-pointer py-4 text-lg font-semibold text-left">How do you manipulate an element's attributes
+                                and styles using the DOM?</summary>
+                            <p class="text-gray-500 pl-4 pb-4">You can manipulate an element's attributes using methods like `setAttribute`,
+                                `getAttribute`, or directly through properties like `element.id` or `element.src`. For styles, you can change
+                                the `style` property of the element, such as `element.style.color = 'red';`, or by adding/removing CSS classes
+                                with `classList` methods.</p>
+                        </details>
+        </div>
+        <script src="js/toggleFaq.js"></script>
+    </section>
+</body>
+
+</html>

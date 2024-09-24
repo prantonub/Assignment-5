@@ -59,3 +59,4 @@ document.getElementById('closeBtn').addEventListener('click', function() {
     const confirmationPopup = document.getElementById('my_modal_1');
     confirmationPopup.close();
 });
+

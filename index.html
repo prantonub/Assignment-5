@@ -16,19 +16,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<nav class=" fixed top-0 left-0 w-full max-w-12xl mx-auto px-4 py-3 flex justify-between items-center p-10 py-10 bg-zinc-100 shadow-lg">
-    <button id="blogButton" class="bg-lime-400 text-black font-semibold px-6 py-2 rounded-md shadow hover:bg-lime-500">
-        Blog
-    </button>
-    <div class="flex items-center space-x-2">
-        <img src="assets/logo.png" alt="" srcset="">
-    <span class="font-bold text-xl">Donate Bangladesh</span>
-    </div>
-    <div class="flex items-center gap-2 ">
-        <img src="assets/coin.png" alt="" srcset="">
-        <h1 id="mainBalance" class="text-xl">5500 BDT</h1>
-    </div>
-</nav>
+    <nav
+        class="fixed top-0 left-0 w-full max-w-12xl mx-auto px-4 py-3 flex justify-between items-center p-10 py-10 bg-zinc-100 shadow-lg">
+        <!-- Link to the FAQ page -->
+        <a href="js/home.html">
+            <button id="blogButton"
+                class="bg-lime-400 text-black font-semibold px-6 py-2 rounded-md shadow hover:bg-lime-500">
+                Blog
+            </button>
+        </a>
+        <div class="flex items-center space-x-2">
+            <img src="assets/logo.png" alt="">
+            <span class="font-bold text-xl">Donate Bangladesh</span>
+        </div>
+        <div class="flex items-center gap-2 ">
+            <img src="assets/coin.png" alt="">
+            <h1 id="mainBalance" class="text-xl">5500 BDT</h1>
+        </div>
+    </nav>
 <main class="max-w-screen-xl mx-auto px-16 lg:px-28 ">
     <section class ="flex justify-center py-10 gap-4 mt-12">
     <div>
@@ -90,7 +95,7 @@
     </div>
 </section>
 
-<div id="donationHistory" class="mt-5">
+<div id="donationHistory" class="mt-5 ">
     <h2 class="text-2xl font-semibold mb-4 hidden">Donation History</h2>
     <div id="donationCards"></div>
 </div>
@@ -142,7 +147,7 @@
     </section>
 
 <!-- section 3 start -->
-<section id="section-3" class="flex justify-center justify-between px-10 py-30 gap-10  rounded-md  bg-gray-100 mt-5">
+<section id="section-3" class="flex justify-center justify-between px-10 py-30 gap-10 mb-5 rounded-md  bg-gray-100 mt-5">
     <div class="w-96">
         <img src="assets/quota-protest.png" alt="" srcset="">
     </div>
@@ -183,55 +188,11 @@
 </section>
 
 <!-- FAQ -->
-<section class="bg-gray-100 p-10">
-    <div id="faqSection" class="max-w-2xl mx-auto bg-white p-5 rounded-lg shadow-lg hidden">
-        <h2 class="text-2xl font-bold mb-4 flex items-center">
-            <span>Important FAQ</span>
-            <i class="fas fa-question-circle ml-2"></i>
-        </h2>
-
-     
-        <details class="border-b border-gray-300 mb-2">
-            <summary class="cursor-pointer py-4 text-lg font-semibold text-left">What is the document object model
-                (DOM)?</summary>
-            <p class="text-gray-500 pl-4 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate
-                nihil ipsam, nulla exercitationem inventore atque.</p>
-        </details>
-
-        <details class="border-b border-gray-300 mb-2">
-            <summary class="cursor-pointer py-4 text-lg font-semibold text-left">How do you select an element from the
-                DOM?</summary>
-            <p class="text-gray-500 pl-4 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate
-                nihil ipsam, nulla exercitationem inventore atque.</p>
-        </details>
-
-    
-        <details class="border-b border-gray-300 mb-2">
-            <summary class="cursor-pointer py-4 text-lg font-semibold text-left">What is event delegation in the context
-                of the DOM, and why is it useful?</summary>
-            <p class="text-gray-500 pl-4 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate
-                nihil ipsam, nulla exercitationem inventore atque.</p>
-        </details>
-
-
-        <details class="border-b border-gray-300 mb-2">
-            <summary class="cursor-pointer py-4 text-lg font-semibold text-left">How do you manipulate an element's
-                attributes and styles using the DOM?</summary>
-            <p class="text-gray-500 pl-4 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate
-                nihil ipsam, nulla exercitationem inventore atque.</p>
-        </details>
-    </div>
-
-    <script src="js/toggleFaq.js"></script> 
-   
-</section>
-
 </main>
-<script src="js/faq.js"></script>
-<script src="js/utilities.js"></script>
 <script src="/js/donation-section-1.js"></script>
 <script src="/js/donation-section-2.js"></script>
 <script src="/js/donation-section-3.js"></script>
 <script src="js/history.js"></script>
+<script src="/js/donation-history.js"></script>
 </body>
 </html>
