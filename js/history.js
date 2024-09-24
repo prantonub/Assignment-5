@@ -18,6 +18,7 @@ historyTab.addEventListener("click", function() {
     document.getElementById("section-1").classList.add("hidden");
     document.getElementById("section-2").classList.add("hidden");
     document.getElementById("section-3").classList.add("hidden");
+
 });
 
 donationTab.addEventListener("click", function() {
